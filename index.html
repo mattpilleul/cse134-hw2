@@ -3,24 +3,30 @@
   <head>
     <meta charset="utf-8" />
     <title>CSE 134B - HW2 - Portfolio</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      h4 {
+        color: gray;
+      }
+    </style>
   </head>
   <body>
     <header>
       <h1>Welcome to my personal portfolio</h1>
       <section>
         <nav>
-          <a href="#">Projects</a>
+          <a href="#projects">Projects</a>
           <br />
-          <a href="#">Skills</a>
+          <a href="#skills">Skills</a>
           <br />
-          <a href="#">Testimonials</a>
+          <a href="#testimonials">Testimonials</a>
           <br />
-          <a href="#">Contact Me</a>
+          <a href="#contact-me">Contact Me</a>
         </nav>
-        <br />
         <div>
-          <h2>Warning text tags zone <span role="img">⚠️</span></h2>
+          <h2>
+            Warning ! You are entering a test zone <span role="img">⚠️</span>
+          </h2>
           <em>Emphasized text</em>
           <br />
           <i>Italicized text</i>
@@ -36,57 +42,188 @@
               And to finish the paragraph tag
             </p>
           </aside>
-          <hr />
-          <h4>Groceries</h4>
-          <ul>
-            <li>Tomatoes</li>
-            <li>Chicken</li>
-            <li>Bread</li>
-          </ul>
-          <hr />
-          <h4>Best movies in 2022</h4>
-          <ol>
-            <li>Avatar 2</li>
-            <li>Nope</li>
-          </ol>
-          <hr />
           <pre>This is a small text to test the pre tag</pre>
           <details>
-            <summary>TEST TOTO</summary>
-            <p>
-              HejXlxPsikwczgElzEvo tjWRyzIpakmTisNosGLi TsCSTjeoVifIpvPdznqb
-              WMoYaHVDYuQidFuGTgFI kjHhcxlgwdHJGqFvLbaf uEOJVfpHSTujuHAsltMu
-            </p>
+            <summary>Here you can find secret informations about me</summary>
+            <p>I come from France, oui oui baguette</p>
           </details>
         </div>
       </section>
     </header>
     <main>
-      <h3>You can get everything you need right here all in one place</h3>
-      <section>
+      <section id="projects">
+        <hr />
+        <h3>You can get everything you need right here all in one place</h3>
         <span>First, you need to type this in your terminal :</span>
         <br />
-        <code>print("Hello, World!") </code>
+        <code>print("Hello, my name is Matthieu, welcome !") </code>
         <p>
-          To know more about code here you go :
-          <a href="https://tio.run/"><b>TRY ME</b></a>
+          To know more about different code languages here you go :
+          <a href="https://tio.run/"><b>VISIT WEBSITE</b></a>
         </p>
-        <video controls loop width="200" height="200">
-          <source
-            src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-            type="video/mp4"
+        <h4>Here is just test for future projects showcase</h4>
+        <figure>
+          <figcaption>This is previous projects</figcaption>
+          <img
+            src="assets/img/1610440688CsnTItSOqE.png"
+            alt="JS Projects"
+            width="300"
           />
-        </video>
-        <br />
-        <audio
-          controls
-          title="Audio Test #1"
-          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-        >
-          This a sample audio for test purpose
-        </audio>
-        <br />
+          <br />
+          <video controls loop width="200" height="200">
+            <source
+              src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <br />
+          <audio
+            controls
+            title="Audio Test #1"
+            src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          >
+            This a sample audio for test purpose
+          </audio>
+          <br />
+          <picture>
+            <source
+              media="(min-width:300px)"
+              srcset="assets/img/Blog_js-checklist.jpg"
+            />
+            <img
+              src="assets/img/Blog_js-checklist.jpg"
+              alt="Blog JS"
+              width="300"
+            />
+          </picture>
+          <p>Here is an iframe to showcase live future projects :</p>
+          <iframe
+            src="https://metastatus.com"
+            height="350"
+            width="650"
+            title="Is Meta Up ?"
+          ></iframe>
+        </figure>
+        <hr />
+      </section>
+      <section id="skills">
+        <h3>A small showcase of my skills</h3>
+        <h4>Web</h4>
+        <ul>
+          <li>ReactJS</li>
+          <li>NextJS</li>
+          <li>VueJS</li>
+        </ul>
+        <h4>Mobile</h4>
+        <ol>
+          <li>React Native</li>
+          <li>Swift</li>
+        </ol>
+      </section>
+      <section id="testimonials">
+        <h3>Here my clients can tell about me and my amazing work !</h3>
+        <canvas
+          id="myCanvas"
+          height="100"
+          width="460"
+          style="border: 1px solid #000000"
+        ></canvas>
+      </section>
+      <section id="contact-me">
+        <h3>In this part you can send me money or ask questions</h3>
+        <form>
+          <fieldset>
+            <legend>Contact-Me</legend>
+            <label>Choose a subject:</label>
+            <select name="Subject">
+              <optgroup label="Work together">
+                <option value="Idea">I have an idea</option>
+                <option value="NoIdea">I have no idea</option>
+                <option value="Lost">I'm lost here</option>
+              </optgroup>
+              <optgroup label="Chat together">
+                <option value="Talk">I want to talk</option>
+                <option value="Scream">I need to scream</option>
+                <option value="Mute">I can't speak</option>
+              </optgroup>
+            </select>
+            <br />
+            <label for="gender">Choose your gender:</label>
+            <input list="gender" id="gender-choice" name="gender-choice" />
+            <datalist id="gender">
+              <option value="Male"></option>
+              <option value="Female"></option>
+              <option value="Other"></option>
+            </datalist>
+            <br /><br />
+            <label for="message">Your message:</label>
+            <br />
+            <textarea
+              name="message"
+              rows="4"
+              cols="35"
+              placeholder="Right your
+            message here"
+            ></textarea>
+            <br />
+            <button type="button" onclick="sendMessage()">Send message</button>
+            <template>
+              <p>I don't understand the use of template</p>
+            </template>
+            <input type="button" value="Press me !" />
+          </fieldset>
+        </form>
       </section>
     </main>
+    <footer>
+      <h2>This is the footer</h2>
+      <a href="https://github.com"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+          /></svg
+      ></a>
+
+      <br />
+      <table>
+        <colgroup>
+          <col span="2" style="background-color: pink" />
+          <col style="background-color: plum" />
+        </colgroup>
+        <caption>
+          Prices
+        </caption>
+        <tr>
+          <th>Language</th>
+          <th>Title</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Basic function to print random string</td>
+          <td>$2</td>
+        </tr>
+        <tr>
+          <td>HTML</td>
+          <td>Simple hello world page !</td>
+          <td>$6</td>
+        </tr>
+      </table>
+    </footer>
+    <script>
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      ctx.font = "30px Arial";
+      ctx.fillText("I'm a full stack developer, I guess", 10, 50);
+
+      function sendMessage() {
+        alert("Message sent !");
+      }
+    </script>
   </body>
 </html>
