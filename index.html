@@ -148,17 +148,18 @@
               </optgroup>
             </select>
             <br />
-            <label for="gender">Choose your gender:</label>
-            <input list="gender" id="gender-choice" name="gender-choice" />
-            <datalist id="gender">
+            <label for="gender-choice">Choose your gender:</label>
+            <input list="gender" name="gender" />
+            <datalist id="gender-choice">
               <option value="Male"></option>
               <option value="Female"></option>
               <option value="Other"></option>
             </datalist>
             <br /><br />
-            <label for="message">Your message:</label>
+            <label for="message-area">Your message:</label>
             <br />
             <textarea
+              id="message-area"
               name="message"
               rows="4"
               cols="35"
